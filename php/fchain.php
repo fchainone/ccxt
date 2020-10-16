@@ -11,12 +11,12 @@ use \ccxt\ArgumentsRequired;
 use \ccxt\InvalidOrder;
 use \ccxt\NotSupported;
 
-class hbtc extends Exchange {
+class fchain extends Exchange {
 
     public function describe() {
         return $this->deep_extend(parent::describe (), array(
-            'id' => 'hbtc',
-            'name' => 'HBTC',
+            'id' => 'fchain',
+            'name' => 'fchain',
             'countries' => array( 'CN' ),
             'rateLimit' => 2000,
             'version' => 'v1',
@@ -68,17 +68,17 @@ class hbtc extends Exchange {
             'urls' => array(
                 'logo' => 'https://user-images.githubusercontent.com/51840849/80134449-70663300-85a7-11ea-8942-e204cdeaab5d.jpg', // 交易所LOGO
                 'api' => array(
-                    'quote' => 'https://api.hbtc.com/openapi/quote', // 市场API数据端点
-                    'contract' => 'https://api.hbtc.com/openapi/contract', // 合约API数据端点
-                    'option' => 'https://api.hbtc.com/openapi/option', // 合约API数据端点
-                    'public' => 'https://api.hbtc.com/openapi', // 公共API数据端点
-                    'private' => 'https://api.hbtc.com/openapi', // 私有API数据端点
-                    'zendesk' => 'https://hbtc.zendesk.com/hc/en-us',
+                    'quote' => 'https://api.fchain.one/openapi/quote', // 市场API数据端点
+                    'contract' => 'https://api.fchain.one/openapi/contract', // 合约API数据端点
+                    'option' => 'https://api.fchain.one/openapi/option', // 合约API数据端点
+                    'public' => 'https://api.fchain.one/openapi', // 公共API数据端点
+                    'private' => 'https://api.fchain.one/openapi', // 私有API数据端点
+                    'zendesk' => 'https://fchain.zendesk.com/hc/en-us',
                 ),
-                'www' => 'https://www.hbtc.com', // 公司主页
-                'referral' => 'https://www.hbtc.com/register/O2S8NS', // 邀请链接
-                'doc' => 'https://github.com/bhexopen/BHEX-OpenApi/tree/master/doc', // openapi文档地址
-                'fees' => 'https://hbtc.zendesk.com/hc/zh-cn/articles/360009274694', // 费率介绍
+                'www' => 'https://www.fchain.one', // 公司主页
+                'referral' => 'https://www.fchain.one/register/O2S8NS', // 邀请链接
+                'doc' => 'https://github.com/fchainone/openapi/tree/master/doc', // openapi文档地址
+                'fees' => 'https://fchain.zendesk.com/hc/zh-cn/articles/360009274694', // 费率介绍
             ),
             'api' => array(
                 'public' => array(
